@@ -1,4 +1,4 @@
-                                            =======  **WELCOME TO ONLINE SUPERMARKET PROJECT**  =======
+                                         =======  **WELCOME TO ONLINE SUPERMARKET PROJECT**  =======
 
 
 In this initiative, we will be coding an online supermarket simulator in the Python programming language.
