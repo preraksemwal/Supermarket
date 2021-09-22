@@ -47,4 +47,4 @@ _CHILL50_   The terms and conditions are as follows:
 
 **Note**: As this is an interactive simulator, we will also be handling exception cases like- invalid item code, invalid coupon code, the invalid format of entering order details based on the type of customer.
 
-" **Run the simulator to visit one of the best supermarkets and buy some stuff. Do not forget to use the coupon. Happy shopping!**__ "
+" ***Run the simulator to visit one of the best supermarkets and buy some stuff. Do not forget to use the coupon. Happy shopping!*** "
