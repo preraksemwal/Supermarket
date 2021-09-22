@@ -8,6 +8,7 @@ In this initiative, we will be coding an online supermarket simulator in the Pyt
 2. **KEY FEATURES** 
 
 => **Customer** **type**: There are two types of customers who visit the supermarket that is, a "_bulk buyer_" or a _"regular buyer_".
+
 A "_regular buyer_" will have to enter the code of each product he wants to purchase and also at every selection, that is a selection input - [1 3 4 1] means that he selected the product with code '1' twice.
 
 A "_bulk buyer_" will have to enter the quantity along with the item code while entering the order details.
