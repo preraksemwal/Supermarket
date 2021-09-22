@@ -1,0 +1,3 @@
+=======  WELCOME TO ONLINE GROCERY STORE PROJECT  =======
+
+In this initiative we will be coding an online grocery store simulator in Python programming language.
