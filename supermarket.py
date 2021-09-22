@@ -5,7 +5,7 @@ functions defined below.
 - You MUST complete the functions defined below, except the ones that are already defined. 
 '''
 dict={0:['Tshirt','Apparels',500],1:['Trousers','Apparels',600],2:['scarf','Apparels',250],3:['Smartphone','Electronics',20000],4:['iPad','Electronics',30000],5:['Laptop','Electronics',50000],6:['Eggs','Eatables',5],7:['Chocolate','Eatables',10],8:['Juice','Eatables',100],9:['Milk','Eatables',45]}
-########################################################################################
+#########################################################################################
 def show_menu():
 	'''
 	Description: Prints the menu as shown in the PDF
