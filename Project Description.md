@@ -18,15 +18,13 @@ A "_bulk buyer_" will have to enter the quantity along with the item code while 
 ( before Taxation )
 
 Apparels: 10% off if the base amount of Apparels before taxes ≥ 2000
-
-Electronics: 10% off if base amount of Electronics before taxes ≥ 25000  Eatables: 10% off if the base amount of Eatables before taxes ≥ 500
+Electronics: 10% off if base amount of Electronics before taxes ≥ 25000
+Eatables: 10% off if the base amount of Eatables before taxes ≥ 500
 
 ( after Taxation )
 
 Apparels: 10% on the cost of apparels after discount 
-
 Electronics: 15% on the cost of electronics after discount 
-
 Eatables: 5% on the cost of eatables after discount 
 
 =>**Coupon discount** ( coupon is case sensitive )
@@ -39,6 +37,6 @@ _CHILL50_   The terms and conditions are as follows:
 -> It is valid only if the cost after discounts and taxes is ≥ 50000
 -> It offers a discount of 50%, up to Rs. 10000
 
-Note: As this is an interactive simulator, we will also be handling exception cases like- invalid item code, invalid coupon code, the invalid format of entering order details based on the type of customer.
+**Note**: As this is an interactive simulator, we will also be handling exception cases like- invalid item code, invalid coupon code, the invalid format of entering order details based on the type of customer.
 
 " **Run the simulator to visit one of the best supermarkets and buy some stuff. Do not forget to use the coupon. Happy shopping!**__ "
