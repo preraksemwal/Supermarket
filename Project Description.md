@@ -14,10 +14,14 @@ A "_regular buyer_" will have to enter the code of each product he wants to purc
 A "_bulk buyer_" will have to enter the quantity along with the item code while entering the order details.
 
 => **Discounts**: 
+
 ( before Taxation )
+
 Apparels: 10% off if the base amount of Apparels before taxes ≥ 2000 
 Electronics: 10% off if base amount of Electronics before taxes ≥ 25000  Eatables: 10% off if the base amount of Eatables before taxes ≥ 500
+
 ( after Taxation )
+
 Apparels: 10% on the cost of apparels after discount 
 Electronics: 15% on the cost of electronics after discount 
 Eatables: 5% on the cost of eatables after discount 
