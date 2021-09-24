@@ -1,17 +1,7 @@
-'''
-- This is the skeleton code, wherein you have to write the logic for each of the
-functions defined below.
-- Feel free to add new helper functions, but DO NOT modify/delete the given functions. 
-- You MUST complete the functions defined below, except the ones that are already defined. 
-'''
 dict={0:['Tshirt','Apparels',500],1:['Trousers','Apparels',600],2:['scarf','Apparels',250],3:['Smartphone','Electronics',20000],4:['iPad','Electronics',30000],5:['Laptop','Electronics',50000],6:['Eggs','Eatables',5],7:['Chocolate','Eatables',10],8:['Juice','Eatables',100],9:['Milk','Eatables',45]}
 #########################################################################################
+
 def show_menu():
-	'''
-	Description: Prints the menu as shown in the PDF
-	Parameters: No paramters
-	Returns: No return value
-	'''
 	for i in range(50):
 		print("=",end="")
 	print("\n\t\t MY BAZAAR")
@@ -28,16 +18,10 @@ CODE | DESCRIPTION |   CATEGORY   | COST (Rs)
 		s1=" "*(12-len(dict[i][0]))
 		s2=" "*(11-len(dict[i][1]))
 		print(i,"    | ",dict[i][0],s1,"|   ",dict[i][1],s2,"| ",dict[i][2],sep="")
-########################################################################################	
+
+########################################################################################
+
 def get_regular_input():
-	'''
-	Description: Takes space separated item codes (only integers allowed). 
-	Include appropriate print statements to match the output with the 
-	screenshot provided in the PDF.
-	Parameters: No parameters
-	Returns: Returns a list of integers of length 10, where the i_th
-	element represents the quantity of the item with item code i. 
-	'''
 	print("""\n\n-------------------------------------------------
 ENTER ITEMS YOU WISH TO BUY
 -------------------------------------------------
@@ -51,16 +35,10 @@ ENTER ITEMS YOU WISH TO BUY
 	if count!=len(codes):
 		print("NOTE: Invalid input/s discarded !")
 	return code_list
+
 ########################################################################################
+
 def get_bulk_input():
-	'''
-	Description: Takes inputs (only integers allowed) from a bulk buyer. 
-	For details, refer PDF. Include appropriate print statements to match 
-	the output with the screenshot provided in the PDF.
-	Parameters: No parameters
-	Returns: Returns a list of integers of length 10, where the i_th
-	element represents the quantity of the item with item code i.
-	'''
 	print("""\n\n-------------------------------------------------
 ENTER ITEM AND QUANTITIES
 -------------------------------------------------""")
@@ -86,15 +64,10 @@ ENTER ITEM AND QUANTITIES
 			else:
 				print("invalid quantity. Try Again")
 	return code_list
+
 ########################################################################################
+
 def print_order_details(quantities):
-	'''
-	Description: Prints the details of the order in a manner similar to the
-	sample given in PDF.
-	Parameters: Takes a list of integers of length 10, where the i_th
-	element represents the quantity of the item with item code i.
-	Returns: No return value
-	'''
 	print("""\n\n-------------------------------------------------
 ORDER DETAILS
 -------------------------------------------------""")
@@ -108,17 +81,10 @@ ORDER DETAILS
 			count+=1
 			total+=dict[i][2]*quantities[i]
 	print(f"\nTOTAL COST = {total}")
+
 ########################################################################################
+
 def calculate_category_wise_cost(quantities):
-	'''
-	Description: Calculates the category wise cost using the quantities
-	provided. Include appropriate print statements to match the output with the
-	screenshot provided in the PDF.
-	Parameters: Takes a list of integers of length 10, where the i_th
-	element represents the quantity of the item with item code i.
-	Returns: A 3-tuple of integers in the following format: 
-	(apparels_cost, electronics_cost, eatables_cost)
-	'''
 	print("""\n\n-------------------------------------------------
 CATEGORY-WISE COST
 -------------------------------------------------""")
@@ -142,30 +108,15 @@ CATEGORY-WISE COST
 	if eatables_cost!=0:
 		print(f"Eatables = Rs {eatables_cost}")
 	return (apparels_cost,electronics_cost,eatables_cost)
+
 ########################################################################################
+
 def get_discount(cost, discount_rate):
-	'''
-	Description: This is a helper function. DO NOT CHANGE THIS. 
-	This function must be used whenever you are calculating discounts.
-	Parameters: Takes 2 parameters:
-	- cost: Integer
-	- discount_rate: Float: 0 <= discount_rate <= 1
-	Returns: The discount on the cost provided.
-	'''
 	return int(cost * discount_rate)
+
 ########################################################################################
+
 def calculate_discounted_prices(apparels_cost, electronics_cost, eatables_cost):
-	'''
-	Description: Calculates the discounted category-wise price, if applicable. 
-	Include appropriate print statements to match the output with the
-	screenshot provided in the PDF.
-	Parameters: Takes 3 integer parameters:
-	- apparels_cost: 	cost for the category 'Apparels'
-	- electronics_cost: cost for the category 'Electronics'
-	- eatables_cost: 	cost for the category 'Eatables'
-	Returns: A 3-tuple of integers in the following format: 
-	(discounted_apparels_cost, discounted_electronics_cost, discounted_eatables_cost). 
-	'''
 	print("""\n\n-------------------------------------------------
 DISCOUNTS
 -------------------------------------------------""")
@@ -192,36 +143,18 @@ DISCOUNTS
 	print(f"\nTOTAL DISCOUNT = {discount}")
 	print(f"TOAL COST = {total-discount}")
 	return (discounted_apparels_cost,discounted_electronics_cost,discounted_eatables_cost)
+
 ########################################################################################
+
 def get_tax(cost, tax):
-	'''
-	Description: This is a helper function. DO NOT CHANGE THIS. 
-	This function must be used whenever you are calculating discounts.
-	Parameters: Takes 2 parameters:
-	- cost: Integer
-	- tax: 	Float: 0 <= tax <= 1
-	Returns: The tax on the cost provided.
-	'''
 	return int(cost * tax)
+
 ########################################################################################
 def calculate_tax(apparels_cost, electronics_cost, eatables_cost):
-	'''
-	Description: Calculates the total cost including taxes.
-	Include appropriate print statements to match the output with the
-	screenshot provided in the PDF.
-	Parameters: Takes 3 integer parameters:
-	- apparels_cost: 	cost for the category 'Apparels'
-	- electronics_cost: cost for the category 'Electronics'
-	- eatables_cost: 	cost for the category 'Eatables' 
-	Returns: A 2-tuple of integers in the following format: 
-	(total_cost_including_tax, total_tax)
-	'''
 	print("""\n\n-------------------------------------------------
 TAX
 -------------------------------------------------""")
-	# apparels_cost_after_tax=apparels_cost+apparels_cost*0.1
-	# electronics_cost_after_tax=electronics_cost+electronics_cost*0.15
-	# eatables_cost_after_ tax=eatables_cost+eatables_cost*0.05
+	
 	print(f"[APPARELS] Rs {apparels_cost} * 0.10 = Rs {get_tax(apparels_cost,0.10)}")
 	print(f"[ELECTRONICS] Rs {electronics_cost} * 0.15 = Rs {get_tax(electronics_cost,0.15)}")
 	print(f"[EATABLES] Rs {eatables_cost} * 0.05 = Rs {get_tax(eatables_cost,0.05)}")
@@ -232,15 +165,9 @@ TAX
 	return (total_cost_including_tax, total_tax)
 
 ########################################################################################
+
 def apply_coupon_code(total_cost):
-	'''
-	Description: Takes the coupon code from the user as input (case-sensitive). 
-	For details, refer the PDF. Include appropriate print statements to match 
-	the output with the screenshot provided in the PDF.
-	Parameters: The total cost (integer) on which the coupon is to be applied.
-	Returns: A 2-tuple of integers:
-	(total_cost_after_coupon_discount, total_coupon_discount)
-	'''
+	
 	coupon_discount=0
 	print("""\n\n-------------------------------------------------
 COUPON CODE
@@ -270,15 +197,7 @@ COUPON CODE
 	return (total_cost_after_coupon_discount,coupon_discount)
 ########################################################################################
 def main():
-	'''
-	Description: This is the main function. All production level codes usually
-	have this function. This function will call the functions you have written
-	above to design the logic. You will see how splitting your code into specialised
-	functions makes the code easier to read, write and debug. Include appropriate 
-	print statements to match the output with the screenshots provided in the PDF.
-	Parameters: No parameters
-	Returns: No return value
-	'''
+	
 	show_menu()
 	ch='p'
 	while ch!='n' and ch!='N' and ch!='Y' and ch!='y':
@@ -293,6 +212,8 @@ def main():
 	after_tax=calculate_tax(discounted_prices[0],discounted_prices[1],discounted_prices[2]) #TUPLE tax included total cost,total tax
 	after_coupon=apply_coupon_code(after_tax[0])          # TUPLE 2 integers cost_after_coupon, coupon_discount
 	print("\n\nThank You for visiting!")
+
 ########################################################################################
+
 if __name__ == '__main__':
 	main()
